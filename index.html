@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elshahawy — Portfolio Template</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ░░ CUSTOM CURSOR ░░ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ░░ PRELOADER ░░ -->
+  <div class="preloader" id="preloader">
+    <div class="pre-inner">
+      <span class="pre-count" id="preCount">0</span>
+      <span class="pre-label">loading narrative</span>
+    </div>
+  </div>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <nav class="codex-nav" id="mainNav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>NourElshahawy<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-chapters">
+      <li><a href="#chapter-1" class="nav-ch active" data-chapter="01">Intro</a></li>
+      <li><a href="#chapter-2" class="nav-ch" data-chapter="02">About</a></li>
+      <li><a href="#chapter-3" class="nav-ch" data-chapter="03">Skills</a></li>
+      <li><a href="#chapter-4" class="nav-ch" data-chapter="04">Work</a></li>
+      <li><a href="#chapter-5" class="nav-ch" data-chapter="05">Process</a></li>
+      <li><a href="#chapter-6" class="nav-ch" data-chapter="06">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <i class="bi bi-circle-half"></i>
+      </span>
+      <button class="nav-burger" id="navBurger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#chapter-1" class="mob-link">01 — Intro</a></li>
+      <li><a href="#chapter-2" class="mob-link">02 — About</a></li>
+      <li><a href="#chapter-3" class="mob-link">03 — Skills</a></li>
+      <li><a href="#chapter-4" class="mob-link">04 — Work</a></li>
+      <li><a href="#chapter-5" class="mob-link">05 — Process</a></li>
+      <li><a href="#chapter-6" class="mob-link">06 — Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ░░ PROGRESS BAR ░░ -->
+  <div class="story-progress">
+    <div class="sp-fill" id="storyFill"></div>
+  </div>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 01 — THE OPENING   ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter hero-chapter" id="chapter-1">
+    <div class="chapter-tag">
+      <span class="ch-num">01</span>
+      <span class="ch-title">The Opening</span>
+    </div>
+
+    <!-- Noise grain overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Floating glyphs -->
+    <div class="glyph-field" aria-hidden="true">
+      <span class="glyph">∞</span>
+      <span class="glyph">◈</span>
+      <span class="glyph">⟁</span>
+      <span class="glyph">⌬</span>
+      <span class="glyph">◉</span>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-eyebrow" data-aos="fade-down" data-aos-duration="800">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Creative Developer &amp; Designer</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero-headline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <span class="hl-line">I build things</span>
+        <span class="hl-line hl-italic">that matter.</span>
+      </h1>
+
+      <p class="hero-sub" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+        This isn't a resume. It's a story — of craft, obsession,<br />
+        and the relentless pursuit of digital excellence.
+      </p>
+
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+        <a href="#chapter-4" class="btn-codex btn-primary-codex">
+          <span>Read the Story</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </a>
+        <a href="#chapter-6" class="btn-codex btn-ghost-codex">
+          <span>Hire Me</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+        <div class="stat-pill">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-unit">+</span>
+          <span class="stat-label">Years Crafting</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num" data-count="20">0</span>
+          <span class="stat-unit">+</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-unit">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" data-aos="fade-up" data-aos-delay="800">
+      <div class="scroll-line"></div>
+      <span>Scroll to continue</span>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 02 — THE AUTHOR    ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter about-chapter" id="chapter-2">
+    <div class="chapter-tag">
+      <span class="ch-num">02</span>
+      <span class="ch-title">The Author</span>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center gx-5 gy-5">
+
+        <!-- Image side -->
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
+          <div class="author-image-frame">
+            <div class="frame-deco top-left"></div>
+            <div class="frame-deco bottom-right"></div>
+            <img src="./assets/imgs/personal-img.jpg" loading="lazy" alt="Nour Elshahawy - Developer"
+              class="author-img" />
+            <div class="img-caption">
+              <span>Nour Elshahawy</span>
+              <span class="ic-dot"></span>
+              <span>Available for work</span>
+            </div>
+            <!-- Floating badge -->
+            <div class="float-badge">
+              <i class="bi bi-patch-check-fill"></i>
+              <span>FrontEnd Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="about-content">
+            <p class="about-intro">
+              I didn't start as a developer. I started as someone who was <em>obsessed</em> with making things beautiful
+              and functional — code just happened to be the best tool for that.
+            </p>
+            <p class="about-body">
+              Based in Mansoura, I craft digital experiences that sit at the intersection of design and engineering. My
+              philosophy: every pixel has a purpose, every interaction tells a story.
+            </p>
+            <p class="about-body">
+              When I'm not writing code, I'm probably reading about cognitive psychology, watching obscure films, or
+              trying to understand why some websites feel alive while others feel dead.
+            </p>
+
+            <!-- Philosophy cards -->
+            <div class="philosophy-row">
+              <div class="philosophy-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="bi bi-pen-fill"></i>
+                <strong>Design-First</strong>
+                <span>Beauty with purpose</span>
+              </div>
+              <div class="philosophy-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="bi bi-cpu-fill"></i>
+                <strong>Code-Driven</strong>
+                <span>Clean & scalable</span>
+              </div>
+              <div class="philosophy-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="bi bi-people-fill"></i>
+                <strong>Human-Centered</strong>
+                <span>Built for real people</span>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="./assets/cv/Nour-Amir-Elshahawy-CV.pdf" class="btn-codex btn-outline-codex" download>
+                <i class="bi bi-download"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 03 — THE TOOLS     ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter skills-chapter" id="chapter-3">
+    <div class="chapter-tag">
+      <span class="ch-num">03</span>
+      <span class="ch-title">The Tools</span>
+    </div>
+
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">What I <span class="highlight-text">Work With</span></h2>
+        <p class="section-sub">Not just a list — a reflection of how I think about problems.</p>
+      </div>
+
+      <!-- Terminal window -->
+      <div class="terminal-window" data-aos="fade-up" data-aos-delay="150">
+        <div class="terminal-bar">
+          <span class="tb-dot red"></span>
+          <span class="tb-dot yellow"></span>
+          <span class="tb-dot green"></span>
+          <span class="tb-title">~/skills — zsh</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="term-line">
+            <span class="term-prompt">nour@code:~$</span>
+            <span class="term-cmd" id="typeCmd"></span>
+            <span class="term-cursor">█</span>
+          </div>
+          <div class="term-output" id="termOutput"></div>
+        </div>
+      </div>
+
+      <!-- Skills grid -->
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="sc-title"><i class="bi bi-code-slash"></i> Frontend</h4>
+          <div class="skill-tags">
+            <span class="stag active">HTML5</span>
+            <span class="stag active">CSS3 </span>
+            <span class="stag active">React</span>
+            <span class="stag ">Next.js</span>
+            <span class="stag active">Bootstrap 5</span>
+            <span class="stag active">JavaScript ES6+</span>
+            <span class="stag active">TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="sc-title"><i class="bi bi-server"></i> Backend</h4>
+          <div class="skill-tags">
+            <span class="stag">Python</span>
+            <span class="stag active">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h4 class="sc-title"><i class="bi bi-palette-fill"></i> Design</h4>
+          <div class="skill-tags">
+            <span class="stag active">Figma</span>
+            <span class="stag">Photoshop</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <h4 class="sc-title"><i class="bi bi-tools"></i> DevOps</h4>
+          <div class="skill-tags">
+            <span class="stag active">Git / GitHub</span>
+            <span class="stag">Docker</span>
+            <span class="stag active">Vercel</span>
+            <span class="stag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 04 — THE WORK      ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter work-chapter" id="chapter-4">
+    <div class="chapter-tag">
+      <span class="ch-num">04</span>
+      <span class="ch-title">The Work</span>
+    </div>
+
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Selected <span class="highlight-text">Projects</span></h2>
+        <p class="section-sub">Each one taught me something different. Here's the proof.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="work-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="wf-btn active" data-filter="all">All Work</button>
+        <button class="wf-btn" data-filter="web">Web Dev</button>
+        <button class="wf-btn" data-filter="design">UI/UX</button>
+        <button class="wf-btn" data-filter="brand">Branding</button>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projectsGrid">
+
+
+
+        <!-- <div class="project-card" data-category="web design" data-aos="fade-up" data-aos-delay="100">
+          <div class="pc-image">
+            <img src="./assets/imgs/wameed2.png" loading="lazy" alt="Fintech Dashboard" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="0">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Web Dev</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2024</span>
+              <span class="pc-type">Wameed</span>
+            </div>
+            <h3 class="pc-title">Wameed — Mental Health</h3>
+            <p class="pc-desc">Depression is a mental state in which
+              you are sad and feel that you cannot
+              enjoy anything, because your situation
+              is so difficultand unpleasant</p>
+            <div class="pc-tags">
+              <span>Native Web</span>
+            </div>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="project-card large-card" data-category="design" data-aos="fade-up" data-aos-delay="150">
+          <div class="pc-image">
+            <img src="./assets/imgs/wameed.png" loading="lazy" alt="E-Commerce Redesign" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="1">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">UI/UX</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2024</span>
+              <span class="pc-type">Mental Health</span>
+            </div>
+            <h3 class="pc-title">Wameed — Mental Health</h3>
+            <p class="pc-desc">A complete brand experience from identity to checkout flow. Conversion increased by 340%.
+            </p>
+            <div class="pc-tags">
+              <span>Figma</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card" data-category="brand" data-aos="fade-up" data-aos-delay="250">
+          <div class="pc-image">
+            <img src="./assets/imgs/dander.png" alt="Brand Identity" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="3">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Dander</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2025</span>
+              <span class="pc-type">Brand Identity</span>
+            </div>
+            <h3 class="pc-title">Dander - Ecommerce-web</h3>
+            <p class="pc-desc">High-quality styles for men and women. Fast delivery, affordable prices, and fresh new
+              drops
+              weekly.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="project-card large-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="pc-image">
+            <img src="./assets/imgs/image copy.png" loading="lazy" alt="Data Platform" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="4">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Web Dev</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2025</span>
+              <span class="pc-type">Meditor</span>
+            </div>
+            <h3 class="pc-title">Meditor - Health Care</h3>
+            <p class="pc-desc">Protect Your Health And Take Care To Of Your Health.</p>
+            <div class="pc-tags">
+              <span>React Web</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card large-card" data-category="design" data-aos="fade-up" data-aos-delay="150">
+          <div class="pc-image">
+            <img src="./assets/imgs/image.png" loading="lazy" alt="E-Commerce Redesign" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="1">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">WEB</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2025</span>
+              <span class="pc-type">Fixyland</span>
+            </div>
+            <h3 class="pc-title">Fixyland — The Best Hotel Fixyland Services</h3>
+            <p class="pc-desc">
+              World Class Luxury Hotel and Resort Near City
+            </p>
+            <div class="pc-tags">
+              <span>Next.js</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="project-card" data-category="web design" data-aos="fade-up" data-aos-delay="100">
+          <div class="pc-image">
+            <img src="./assets/imgs/wameed2.png" loading="lazy" alt="Fintech Dashboard" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="0">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Web Dev</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2024</span>
+              <span class="pc-type">Wameed</span>
+            </div>
+            <h3 class="pc-title">Wameed — Mental Health</h3>
+            <p class="pc-desc">Depression is a mental state in which
+              you are sad and feel that you cannot
+              enjoy anything, because your situation
+              is so difficultand unpleasant</p>
+            <div class="pc-tags">
+              <span>Native Web</span>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="project-card large-card" data-category="design" data-aos="fade-up" data-aos-delay="150">
+          <div class="pc-image">
+            <img src="./assets/imgs/wameed.png" loading="lazy" alt="E-Commerce Redesign" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="1">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">UI/UX</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2024</span>
+              <span class="pc-type">Mental Health</span>
+            </div>
+            <h3 class="pc-title">Wameed — Mental Health</h3>
+            <p class="pc-desc">A complete brand experience from identity to checkout flow. Conversion increased by 340%.
+            </p>
+            <div class="pc-tags">
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card" data-category="brand" data-aos="fade-up" data-aos-delay="250">
+          <div class="pc-image">
+            <img src="./assets/imgs/dander.png" alt="Brand Identity" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="3">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Dander</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2025</span>
+              <span class="pc-type">Brand Identity</span>
+            </div>
+            <h3 class="pc-title">Dander - Ecommerce-web</h3>
+            <p class="pc-desc">High-quality styles for men and women. Fast delivery, affordable prices, and fresh new
+              drops weekly.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="project-card large-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="pc-image">
+            <img src="./assets/imgs/dander.png" loading="lazy" alt="Data Platform" />
+            <div class="pc-overlay">
+              <button class="pc-open" data-project="4">
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+            <span class="pc-category-badge">Web Dev</span>
+          </div>
+          <div class="pc-info">
+            <div class="pc-meta">
+              <span class="pc-year">2025</span>
+              <span class="pc-type">Dander</span>
+            </div>
+            <h3 class="pc-title">Dander - Ecommerce-web</h3>
+            <p class="pc-desc">High-quality styles for men and women. Fast delivery, affordable prices, and fresh new
+              drops weekly.</p>
+            <div class="pc-tags">
+              <span>Native Web</span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Work CTA -->
+      <div class="work-more" data-aos="fade-up">
+        <a href="#" class="btn-codex btn-outline-codex">
+          <span>View All Projects</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  PROJECT MODAL              ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <div class="project-modal" id="projectModal">
+    <div class="pm-backdrop" id="pmBackdrop"></div>
+    <div class="pm-panel">
+      <button class="pm-close" id="pmClose"><i class="bi bi-x-lg"></i></button>
+      <div class="pm-body" id="pmBody">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 05 — THE PROCESS   ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter process-chapter" id="chapter-5">
+    <div class="chapter-tag">
+      <span class="ch-num">05</span>
+      <span class="ch-title">The Process</span>
+    </div>
+
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">How I <span class="highlight-text">Think & Build</span></h2>
+        <p class="section-sub">A creative philosophy distilled into four movements.</p>
+      </div>
+
+      <!-- Process timeline -->
+      <div class="process-timeline">
+
+        <div class="pt-step" data-aos="fade-right" data-aos-delay="100">
+          <div class="pts-number">01</div>
+          <div class="pts-content">
+            <div class="pts-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h3>Discover</h3>
+            <p>I start by listening — to the problem, the user, the context. I dig deep before I draw a single
+              wireframe. Understanding the "why" shapes every decision.</p>
+            <ul class="pts-list">
+              <li>User research &amp; interviews</li>
+              <li>Competitive analysis</li>
+              <li>Problem framing</li>
+            </ul>
+          </div>
+          <div class="pts-line"></div>
+        </div>
+
+        <div class="pt-step right" data-aos="fade-left" data-aos-delay="150">
+          <div class="pts-number">02</div>
+          <div class="pts-content">
+            <div class="pts-icon"><i class="bi bi-pencil-square"></i></div>
+            <h3>Design</h3>
+            <p>Ideas flow to paper first, then pixels. I believe in the power of lo-fi before committing to hi-fi.
+              Iteration is sacred, not a failure.</p>
+            <ul class="pts-list">
+              <li>Sketching &amp; wireframing</li>
+              <li>Design system creation</li>
+              <li>Prototype &amp; test</li>
+            </ul>
+          </div>
+          <div class="pts-line"></div>
+        </div>
+
+        <div class="pt-step" data-aos="fade-right" data-aos-delay="200">
+          <div class="pts-number">03</div>
+          <div class="pts-content">
+            <div class="pts-icon"><i class="bi bi-terminal-fill"></i></div>
+            <h3>Develop</h3>
+            <p>Code that reads like prose. I write modular, documented, scalable systems — because the person who
+              maintains it six months later might be me.</p>
+            <ul class="pts-list">
+              <li>Component architecture</li>
+              <li>Performance optimization</li>
+              <li>Accessibility first</li>
+            </ul>
+          </div>
+          <div class="pts-line"></div>
+        </div>
+
+        <div class="pt-step right" data-aos="fade-left" data-aos-delay="250">
+          <div class="pts-number">04</div>
+          <div class="pts-content">
+            <div class="pts-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+            <h3>Deliver</h3>
+            <p>Shipping is not the end — it's the beginning of learning. I stay involved post-launch, measure impact,
+              and iterate based on real-world data.</p>
+            <ul class="pts-list">
+              <li>QA &amp; cross-browser testing</li>
+              <li>Analytics &amp; monitoring</li>
+              <li>Ongoing improvement</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  TESTIMONIALS (SWIPER)      ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="testimonials-chapter" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">What Clients <span class="highlight-text">Say</span></h2>
+      </div>
+
+      <div class="swiper testimonial-swiper" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <p class="tc-quote">"Alex doesn't just build what you ask for — he builds what you actually need. The
+                final product was beyond anything we imagined. The attention to detail and the narrative quality of the
+                work is unmatched."</p>
+              <div class="tc-author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sarah M." />
+                <div>
+                  <strong>Sarah Morrison</strong>
+                  <span>CEO, Lumina Commerce</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <p class="tc-quote">"Working with Alex felt like having a senior product designer and a senior engineer in
+                one person. He understood our vision immediately and elevated it in ways we didn't expect. Truly
+                exceptional work."</p>
+              <div class="tc-author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Daniel K." />
+                <div>
+                  <strong>Daniel Kim</strong>
+                  <span>CTO, Finova Inc.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <p class="tc-quote">"I've hired many developers over the years. Alex is in a completely different league —
+                not just technically, but in how he communicates, manages expectations, and delivers consistently
+                excellent results."</p>
+              <div class="tc-author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Emma L." />
+                <div>
+                  <strong>Emma Laurent</strong>
+                  <span>Founder, Forma Studio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <p class="tc-quote">"The Pulse app became our #1 revenue driver within 3 months of launch. Alex's code is
+                clean, his designs are beautiful, and his commitment to the project was absolute. Couldn't recommend
+                more highly."</p>
+              <div class="tc-author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Marcus T." />
+                <div>
+                  <strong>Marcus Thorn</strong>
+                  <span>Product Lead, Pulse Health</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev ts-prev"></div>
+        <div class="swiper-button-next ts-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  CHAPTER 06 — THE CONTACT   ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <section class="chapter contact-chapter" id="chapter-6">
+    <div class="chapter-tag">
+      <span class="ch-num">06</span>
+      <span class="ch-title">The Contact</span>
+    </div>
+
+    <div class="grain-overlay"></div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="contact-inner" data-aos="fade-up">
+            <h2 class="contact-headline">Let's write<br /><span class="highlight-text">the next
+                chapter</span><br />together.</h2>
+            <p class="contact-sub">I'm open to freelance projects, full-time roles, and interesting collaborations. If
+              you have something worth building, let's talk.</p>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="cf-field">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Nour Elshahawy" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="cf-field">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="nour@example.com" required />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="cf-field">
+                    <label>Project Type</label>
+                    <select>
+                      <option value="">Select a type...</option>
+                      <option>Web Development</option>
+                      <option>UI/UX Design</option>
+                      <option>Brand Identity</option>
+                      <option>Consultation</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="cf-field">
+                    <label>Tell me about your project</label>
+                    <textarea rows="5" placeholder="Describe your vision, goals, and timeline..."></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-codex btn-primary-codex w-100">
+                    <span>Send the Message</span>
+                    <i class="bi bi-send-fill"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact info strip -->
+      <div class="contact-strip" data-aos="fade-up" data-aos-delay="200">
+        <a href="mailto:enour1847@gmail.com" class="cs-item">
+          <i class="bi bi-envelope-fill"></i>
+          <span>enour1847@gmail.com</span>
+        </a>
+        <a href="tel:+020 1065801252" class="cs-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span>+020 1065801252</span>
+        </a>
+        <a href="#" class="cs-item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Mansoura, EGYPT</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════╗ -->
+  <!-- ║  FOOTER                     ║ -->
+  <!-- ╚══════════════════════════════╝ -->
+  <footer class="codex-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>NourElshahawy<span class="logo-bracket">]</span>
+          <p>Crafting digital stories, one pixel at a time.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/NourElshahawy" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/nour-elshahawy-920a6b238/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://x.com/NAmer537" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 NourElshahawy</span>
+        <span>Designed By NourElshahawy</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ BACK TO TOP ░░ -->
+  <button class="back-top" id="backTop" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ░░ SCRIPTS ░░ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
