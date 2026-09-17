@@ -349,7 +349,7 @@ function initTerminal() {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.pc-open').forEach(btn => {
+  document.querySelectorAll('button.pc-open').forEach(btn => {
     btn.addEventListener('click', () => openModal(parseInt(btn.dataset.project, 10)));
   });
 
