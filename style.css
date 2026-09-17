@@ -65,6 +65,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -74,6 +76,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100%;
   cursor: none;
   transition: background var(--transition), color var(--transition);
 }
@@ -1869,6 +1872,16 @@ a {
 
   .project-card.large-card {
     grid-column: span 2;
+  }
+}
+
+/* Bootstrap's .gx-5 gutter (3rem) is wider than the .container's padding
+   (0.75rem) below the lg breakpoint, which pushes .row past the viewport
+   edge and triggers mobile browsers' "shrink to fit" zoom-out bug. Cap it
+   to the container's own gutter so the row never overflows. */
+@media (max-width: 991.98px) {
+  .about-chapter .row {
+    --bs-gutter-x: 1.5rem;
   }
 }
 
